@@ -1,34 +1,74 @@
-# Backend
+# Compiled class files
+*.class
+
+# Log files
+*.log
+backend.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
 backend/target/
 backend/.mvn/
 backend/mvnw
 backend/mvnw.cmd
-backend/.idea/
-backend/*.iml
+backend/.mvn/wrapper/maven-wrapper.jar
 
-# Frontend
+# Node
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
-frontend/.DS_Store
+frontend/.env
+frontend/.env.local
+frontend/.env.production
 
 # IDE
 .idea/
-.vscode/
 *.iml
+.vscode/
 *.swp
 *.swo
+*~
+.DS_Store
 
-# Logs
-*.log
-logs/
+# Build artifacts
+release/
+*.tar.gz
 
-# Environment
+# Database
+*.sql.bak
+*.db
+*.sqlite
+
+# Environment variables
 .env
 .env.local
+.env.production
+.env.development
 
 # OS
-.DS_Store
 Thumbs.db
+.DS_Store
 
+# Backend specific
+backend/application-local.yml
+backend/application-dev.yml
 
+# Frontend specific
+frontend/.eslintcache
+frontend/coverage/
+
+# CI/CD
+.github/workflows/*.yml.bak
+
+# Temporary files
+*.tmp
+*.temp
+backend.pid
